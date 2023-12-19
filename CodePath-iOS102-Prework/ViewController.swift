@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var numberOfPetsLabel: UILabel!
     @IBOutlet weak var morePetsStepper: UIStepper!
     @IBOutlet weak var morePetsSwitch: UISwitch!
-    
+    @IBOutlet weak var majorTextField: UITextField!
     
     @IBAction func stepperDidChange(_ sender: UIStepper) {
         numberOfPetsLabel.text = "\(Int(sender.value))"
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
 
         // Creating a variable of type string, that holds an introduction. The introduction interpolates the values from the text fields provided.
         // Currently we can only present the information in a print statement. However, this lets us verify that our app is printing out what is intended!
-        let introduction = "My name is \(firstNameTextField.text!) \(lastNameTextField.text!) and I attend \(schoolTextField.text!). I am currently in my \(year!) year and I own \(numberOfPetsLabel.text!) dogs. It is \(morePetsSwitch.isOn) that I want more pets."
+        let introduction = "My name is \(firstNameTextField.text!) \(lastNameTextField.text!) and I attend \(schoolTextField.text!). My major is \(majorTextField.text!). I am currently in my \(year!) year and I own \(numberOfPetsLabel.text!) dogs. It is \(morePetsSwitch.isOn) that I want more pets."
         
         //print(introduction)
 
@@ -47,13 +47,26 @@ class ViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
+    
+    @IBAction func changeColorDidTapped(_ sender: UIButton) {
+        let randomColor = changeColor()
+        view.backgroundColor = randomColor
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let image = UIImage(named: "Florida_State_Seminoles_logo")
         logoImageView.image = image
     }
+    
+    func changeColor() -> UIColor{
 
+            let red = CGFloat.random(in: 0...1)
+            let green = CGFloat.random(in: 0...1)
+            let blue = CGFloat.random(in: 0...1)
 
+            return UIColor(red: red, green: green, blue: blue, alpha: 0.5)
+        }
 }
 
