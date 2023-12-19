@@ -4,7 +4,7 @@
 
 ### App Walk-though
 
-<img src="iOS102 Prework" width=200><br> OR <img src="YOUR_GIF_PATH" width=200><br>
+<img src='iOS102 Prework.gif' title='Proj 7 Walkthrough gif' width='' alt='Video Walkthrough' />
 
 ### Required Features
 
