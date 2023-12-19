@@ -4,7 +4,7 @@
 
 ### App Walk-through
 
-<img src='iOS102 Prework.gif' title='Proj 7 Walkthrough gif' width='' alt='Video Walkthrough' />
+<img src='iOS102 Prework Stretch.gif' title='iOS 102 Prework Walkthrough gif' width='' alt='Video Walkthrough' />
 
 ### Required Features
 
