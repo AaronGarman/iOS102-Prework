@@ -2,7 +2,7 @@
 
 ### Allows users to enter information about themselves and their schools and show a greeting with their information.
 
-### App Walk-though
+### App Walk-through
 
 <img src='iOS102 Prework.gif' title='Proj 7 Walkthrough gif' width='' alt='Video Walkthrough' />
 
